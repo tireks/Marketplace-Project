@@ -249,7 +249,7 @@
         app:layout_constraintEnd_toStartOf="@id/refund_right_pic"
         android:text="Возврат товара"
         style="@style/profile_oneline_text_style" />
-    
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
@@ -258,5 +258,9 @@
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"
         app:itemActiveIndicatorStyle="@style/Custom.Indicator"
+        app:itemTextAppearanceActive="@style/bottom_navigation_view_text_style_active"
+        app:itemTextAppearanceInactive="@style/bottom_navigation_view_text_style_inactive"
+        app:itemTextAppearanceActiveBoldEnabled="false"
+        style="@style/Widget.App.BottomNavigationView"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>

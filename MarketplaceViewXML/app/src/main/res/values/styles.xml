@@ -86,6 +86,32 @@
     </style>
 
     <style name="Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">#FF00FF</item>
+        <item name="android:color">@color/white</item>
     </style>
+
+    <style name="bottom_navigation_view_text_style_active">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="bottom_navigation_view_text_style_inactive">
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme.Material3.DayNight.NoActionBar">
+        ...
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorOnSurface">@color/text_pink</item>
+        <item name="colorOnSecondaryContainer">@color/text_pink</item>
+        <item name="colorOnSurfaceVariant">@color/text_dark_gray</item>
+    </style>
+
 </resources>
