@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Личный кабинет"
+            android:textSize="16sp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/name_view"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="@id/name_bottom_space"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="8dp"
+        style="@style/profile_twoline_container_style" />
+
+    <ImageView
+        android:id="@+id/name_icon"
+        app:layout_constraintTop_toTopOf="@id/name_view"
+        app:layout_constraintBottom_toBottomOf="@id/name_view"
+        app:layout_constraintStart_toStartOf="@id/name_view"
+        android:src="@drawable/ic_person"
+        style="@style/profile_left_pic" />
+
+    <TextView
+        android:id="@+id/name"
+        app:layout_constraintTop_toTopOf="@id/name_view"
+        app:layout_constraintStart_toEndOf="@id/name_icon"
+        app:layout_constraintEnd_toStartOf="@id/logout_pic"
+        tools:text="Марина Иванова"
+        style="@style/profile_twolines_top_text_style" />
+
+    <TextView
+        android:id="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintEnd_toEndOf="@id/name"
+        tools:text="8 800 555 35 35"
+        style="@style/profile_twolines_bottom_text_style" />
+    <Space
+        android:id="@+id/name_bottom_space"
+        app:layout_constraintTop_toBottomOf="@id/phone"
+        app:layout_constraintStart_toStartOf="@id/phone"
+        app:layout_constraintEnd_toEndOf="@id/phone"
+        style="@style/profile_container_spacer_style" />
+
+    <ImageButton
+        android:id="@+id/logout_pic"
+        app:layout_constraintTop_toTopOf="@id/name_view"
+        app:layout_constraintBottom_toBottomOf="@id/name_view"
+        app:layout_constraintEnd_toEndOf="@id/name_view"
+        android:src="@drawable/ic_logout"
+        style="@style/profile_right_pic" />
+
+    <View
+        android:id="@+id/favourites_view"
+        app:layout_constraintTop_toBottomOf="@id/name_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/fav_bottom_space"
+        android:layout_marginTop="24dp"
+        style="@style/profile_twoline_container_style" />
+
+    <ImageView
+        android:id="@+id/favourites_pic"
+        style="@style/profile_left_pic"
+        app:layout_constraintStart_toStartOf="@id/favourites_view"
+        app:layout_constraintTop_toTopOf="@id/favourites_view"
+        app:layout_constraintBottom_toBottomOf="@id/favourites_view"
+        android:src="@drawable/ic_heart"
+        />
+
+    <ImageView
+        android:id="@+id/favourites_right_pic"
+        style="@style/profile_right_pic"
+        app:layout_constraintTop_toTopOf="@id/favourites_view"
+        app:layout_constraintEnd_toEndOf="@id/favourites_view"
+        app:layout_constraintBottom_toBottomOf="@id/favourites_view"
+        android:src="@drawable/ic_right_arrow"
+        />
+
+    <TextView
+        android:id="@+id/favourites_top_text"
+        style="@style/profile_twolines_top_text_style"
+        app:layout_constraintTop_toTopOf="@id/favourites_view"
+        app:layout_constraintStart_toEndOf="@id/favourites_pic"
+        app:layout_constraintEnd_toStartOf="@id/favourites_right_pic"
+        android:text="Избранное"
+        />
+
+    <TextView
+        android:id="@+id/favourites_bottom_text"
+        style="@style/profile_twolines_bottom_text_style"
+        app:layout_constraintTop_toBottomOf="@id/favourites_top_text"
+        app:layout_constraintStart_toStartOf="@id/favourites_top_text"
+        app:layout_constraintEnd_toEndOf="@id/favourites_top_text"
+        tools:text="22 товара"
+        />
+
+    <Space
+        android:id="@+id/fav_bottom_space"
+        style="@style/profile_container_spacer_style"
+        app:layout_constraintTop_toBottomOf="@id/favourites_bottom_text"
+        app:layout_constraintStart_toStartOf="@id/favourites_bottom_text"
+        app:layout_constraintEnd_toEndOf="@id/favourites_bottom_text"
+        />
+
+    <View
+        android:id="@+id/shops_view"
+        app:layout_constraintTop_toBottomOf="@id/favourites_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/profile_oneline_container_style" />
+    <ImageView
+        android:id="@+id/shops_pic"
+        style="@style/profile_left_pic"
+        app:layout_constraintStart_toStartOf="@id/shops_view"
+        app:layout_constraintTop_toTopOf="@id/shops_view"
+        app:layout_constraintBottom_toBottomOf="@id/shops_view"
+        android:src="@drawable/ic_shop"
+        />
+    <ImageView
+        android:id="@+id/shops_right_pic"
+        style="@style/profile_right_pic"
+        app:layout_constraintTop_toTopOf="@id/shops_view"
+        app:layout_constraintEnd_toEndOf="@id/shops_view"
+        app:layout_constraintBottom_toBottomOf="@id/shops_view"
+        android:src="@drawable/ic_right_arrow"
+        />
+    <TextView
+        android:id="@+id/shops_text"
+        app:layout_constraintTop_toTopOf="@id/shops_view"
+        app:layout_constraintBottom_toBottomOf="@id/shops_view"
+        app:layout_constraintStart_toEndOf="@id/shops_pic"
+        app:layout_constraintEnd_toStartOf="@id/shops_right_pic"
+        android:text="Магазины"
+        style="@style/profile_oneline_text_style" />
+
+    <View
+        android:id="@+id/feedback_view"
+        app:layout_constraintTop_toBottomOf="@id/shops_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/profile_oneline_container_style" />
+    <ImageView
+        android:id="@+id/feedback_pic"
+        style="@style/profile_left_pic"
+        app:layout_constraintStart_toStartOf="@id/feedback_view"
+        app:layout_constraintTop_toTopOf="@id/feedback_view"
+        app:layout_constraintBottom_toBottomOf="@id/feedback_view"
+        android:src="@drawable/ic_feedback"
+        />
+    <ImageView
+        android:id="@+id/feedback_right_pic"
+        style="@style/profile_right_pic"
+        app:layout_constraintTop_toTopOf="@id/feedback_view"
+        app:layout_constraintEnd_toEndOf="@id/feedback_view"
+        app:layout_constraintBottom_toBottomOf="@id/feedback_view"
+        android:src="@drawable/ic_right_arrow"
+        />
+    <TextView
+        android:id="@+id/feedback_text"
+        app:layout_constraintTop_toTopOf="@id/feedback_view"
+        app:layout_constraintBottom_toBottomOf="@id/feedback_view"
+        app:layout_constraintStart_toEndOf="@id/feedback_pic"
+        app:layout_constraintEnd_toStartOf="@id/feedback_right_pic"
+        android:text="Обратная связь"
+        style="@style/profile_oneline_text_style" />
+
+    <View
+        android:id="@+id/offer_view"
+        app:layout_constraintTop_toBottomOf="@id/feedback_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/profile_oneline_container_style" />
+    <ImageView
+        android:id="@+id/offer_pic"
+        style="@style/profile_left_pic"
+        app:layout_constraintStart_toStartOf="@id/offer_view"
+        app:layout_constraintTop_toTopOf="@id/offer_view"
+        app:layout_constraintBottom_toBottomOf="@id/offer_view"
+        android:src="@drawable/ic_offer"
+        />
+    <ImageView
+        android:id="@+id/offer_right_pic"
+        style="@style/profile_right_pic"
+        app:layout_constraintTop_toTopOf="@id/offer_view"
+        app:layout_constraintEnd_toEndOf="@id/offer_view"
+        app:layout_constraintBottom_toBottomOf="@id/offer_view"
+        android:src="@drawable/ic_right_arrow"
+        />
+    <TextView
+        android:id="@+id/offer_text"
+        app:layout_constraintTop_toTopOf="@id/offer_view"
+        app:layout_constraintBottom_toBottomOf="@id/offer_view"
+        app:layout_constraintStart_toEndOf="@id/offer_pic"
+        app:layout_constraintEnd_toStartOf="@id/offer_right_pic"
+        android:text="Оферта"
+        style="@style/profile_oneline_text_style" />
+
+    <View
+        android:id="@+id/refund_view"
+        app:layout_constraintTop_toBottomOf="@id/offer_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/profile_oneline_container_style" />
+    <ImageView
+        android:id="@+id/refund_pic"
+        style="@style/profile_left_pic"
+        app:layout_constraintStart_toStartOf="@id/refund_view"
+        app:layout_constraintTop_toTopOf="@id/refund_view"
+        app:layout_constraintBottom_toBottomOf="@id/refund_view"
+        android:src="@drawable/ic_refund"
+        />
+    <ImageView
+        android:id="@+id/refund_right_pic"
+        style="@style/profile_right_pic"
+        app:layout_constraintTop_toTopOf="@id/refund_view"
+        app:layout_constraintEnd_toEndOf="@id/refund_view"
+        app:layout_constraintBottom_toBottomOf="@id/refund_view"
+        android:src="@drawable/ic_right_arrow"
+        />
+    <TextView
+        android:id="@+id/refund_text"
+        app:layout_constraintTop_toTopOf="@id/refund_view"
+        app:layout_constraintBottom_toBottomOf="@id/refund_view"
+        app:layout_constraintStart_toEndOf="@id/refund_pic"
+        app:layout_constraintEnd_toStartOf="@id/refund_right_pic"
+        android:text="Возврат товара"
+        style="@style/profile_oneline_text_style" />
+    
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemActiveIndicatorStyle="@style/Custom.Indicator"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

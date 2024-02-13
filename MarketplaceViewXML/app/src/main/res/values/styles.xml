@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="registration_edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:background">@drawable/reg_edit_tex</item>
+        <item name="android:paddingStart">@dimen/spacing_16</item>
+        <item name="android:paddingEnd">@dimen/spacing_16</item>
+        <item name="android:paddingTop">@dimen/spacing_16</item>
+        <item name="android:paddingBottom">@dimen/spacing_16</item>
+    </style>
+
+    <style name="registration_clear_button_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">11dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+        <item name="android:background">@drawable/reg_edit_tex</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="profile_twoline_container_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:background">@drawable/reg_edit_tex</item>
+    </style>
+
+    <style name="profile_twolines_top_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="profile_twolines_bottom_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="profile_left_pic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+    </style>
+
+    <style name="profile_right_pic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/reg_edit_tex</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="profile_container_spacer_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">8dp</item>
+    </style>
+
+    <style name="profile_oneline_container_style">
+        <item name="android:layout_height">57dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:background">@drawable/reg_edit_tex</item>
+    </style>
+
+    <style name="profile_oneline_text_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/spacing_16</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_16</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#FF00FF</item>
+    </style>
+</resources>

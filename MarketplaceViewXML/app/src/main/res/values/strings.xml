@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Marketplace ViewXML</string>
+    <string name="Registration_toolbar">Вход</string>
 </resources>
