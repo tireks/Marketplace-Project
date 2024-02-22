@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<item android:title="TODO"
+        android:icon="@drawable/ic_sort_by"
+        app:showAsAction="ifRoom"
+        >
+    </item>-->
+
+    <item
+        android:icon="@drawable/ic_sort_by"
+        android:title="По умолчанию"
+        app:showAsAction="ifRoom|withText"
+        >
+        <menu>
+            <item
+                android:id="@+id/start_menu_btn_search"
+                android:title="sas"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/start_menu_btn_random"
+                android:title="dvas"
+                app:showAsAction="never" />
+            />
+        </menu>
+    </item>
+
+</menu>

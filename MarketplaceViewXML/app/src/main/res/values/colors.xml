@@ -24,4 +24,6 @@
     <color name="elements_dark_blue">#53606D</color>
     <color name="elements_black">#000000</color>
 
+    <color name="transparent">#00000000</color>
+
 </resources>
